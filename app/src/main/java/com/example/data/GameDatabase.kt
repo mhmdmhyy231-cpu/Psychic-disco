@@ -109,7 +109,7 @@ class GameRepository(private val dao: AdventureDao) {
 
     suspend fun advanceChapter() {
         val progress = getProgressDirect()
-        if (progress.currentChapter < 5) {
+        if (progress.currentChapter < 8) {
             saveProgress(progress.copy(currentChapter = progress.currentChapter + 1))
         }
     }
@@ -123,7 +123,11 @@ class GameRepository(private val dao: AdventureDao) {
             Relic("scarab", "جعفر الجعل الذهبي", "تميمة مصرية قديمة بشكل خنفسة الروث (الجعل) ترمز للحياة والبعث وتجدد الشمس.", isUnlocked = true),
             Relic("ankh", "مفتاح الحياة (عنخ)", "رمز هيروغليفي يمثل الحياة الأبدية، وكان ملوك الآلهة يحملونه في الرسومات القديمة.", isUnlocked = false),
             Relic("sphinx", "أبو الهول الذهبي", "تمثال برأس إنسان وجسد أسد يمثل القوة والحكمة ويحرس هضبة الجيزة لآلاف السنين.", isUnlocked = false),
-            Relic("pyramid", "مكعب خوفو الذهبي", "هرم خوفو الأكبر، أحد عجائب الدنيا السبع القديمة الباقية، تحفة هندسية فلكية رائعة.", isUnlocked = false)
+            Relic("pyramid", "مكعب خوفو الذهبي", "هرم خوفو الأكبر، أحد عجائب الدنيا السبع القديمة الباقية، تحفة هندسية فلكية رائعة.", isUnlocked = false),
+            Relic("mummy", "القناع الذهبي لـ توت عنخ آمون", "القناع الجنائزي الذهبي للملك توت عنخ آمون المصنوع من الذهب الخالص والأحجار الكريمة.", isUnlocked = false),
+            Relic("cartouche", "خرطوشة الأسماء الملكية", "إطار بيضاوي يحتوي على قائمة الرموز الملكية والأسماء لحماية فرعون من الأرواح الضارة.", isUnlocked = false),
+            Relic("obelisk", "المسلة الفلكية الشامخة", "عمود فلكي فرعوني قديم شاهق الارتفاع يقترن بمسارات النجوم والأشعة الهندسية المتوازية للشمس.", isUnlocked = false),
+            Relic("scroll", "بردية الحكمة المفقودة", "لفافة بردي نادرة مكتوبة بالخط الهيراطيقي والرموز الطبية والفلكية الفرعونية العميقة.", isUnlocked = false)
         )
         dao.insertRelics(defaultRelics)
     }
@@ -136,7 +140,11 @@ class GameRepository(private val dao: AdventureDao) {
                 Relic("scarab", "جعفر الجعل الذهبي", "تميمة مصرية قديمة بشكل خنفسة الروث (الجعل) ترمز للحياة والبعث وتجدد الشمس.", isUnlocked = true),
                 Relic("ankh", "مفتاح الحياة (عنخ)", "رمز هيروغليفي يمثل الحياة الأبدية، وكان ملوك الآلهة يحملونه في الرسومات القديمة.", isUnlocked = false),
                 Relic("sphinx", "أبو الهول الذهبي", "تمثال برأس إنسان وجسد أسد يمثل القوة والحكمة ويحرس هضبة الجيزة لآلاف السنين.", isUnlocked = false),
-                Relic("pyramid", "مكعب خوفو الذهبي", "هرم خوفو الأكبر، أحد عجائب الدنيا السبع القديمة الباقية، تحفة هندسية فلكية رائعة.", isUnlocked = false)
+                Relic("pyramid", "مكعب خوفو الذهبي", "هرم خوفو الأكبر، أحد عجائب الدنيا السبع القديمة الباقية، تحفة هندسية فلكية رائعة.", isUnlocked = false),
+                Relic("mummy", "القناع الذهبي لـ توت عنخ آمون", "القناع الجنائزي الذهبي للملك توت عنخ آمون المصنوع من الذهب الخالص والأحجار الكريمة.", isUnlocked = false),
+                Relic("cartouche", "خرطوشة الأسماء الملكية", "إطار بيضاوي يحتوي على قائمة الرموز الملكية والأسماء لحماية فرعون من الأرواح الضارة.", isUnlocked = false),
+                Relic("obelisk", "المسلة الفلكية الشامخة", "عمود فلكي فرعوني قديم شاهق الارتفاع يقترن بمسارات النجوم والأشعة الهندسية المتوازية للشمس.", isUnlocked = false),
+                Relic("scroll", "بردية الحكمة المفقودة", "لفافة بردي نادرة مكتوبة بالخط الهيراطيقي والرموز الطبية والفلكية الفرعونية العميقة.", isUnlocked = false)
             )
             dao.insertRelics(defaultRelics)
         }

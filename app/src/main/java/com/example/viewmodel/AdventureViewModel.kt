@@ -107,7 +107,26 @@ class AdventureViewModel(application: Application) : AndroidViewModel(applicatio
                 DialogueLine("هاريسون", "مدهش! يتحدث؟ سأسأله عن اللغز ومكان عائلتي باستخدام هذا اللوح الأثري الذكي.. ساعدني يا عمر في صياغة الكلمات!", "Amazing! It speaks? Let's use this smart golden tablet.. help me choose words so we satisfy the Great Sphinx!")
             )
             4 -> listOf(
-                DialogueLine("الراوي", "وأخيراً! تنفتح البوابة الكبرى ويسقط النور الساطع ليكشف عن الأهرامات الثلاثة الشامخة وعائلة هاريسون وهي تلوح بسعادة وغبطة!", "Finally! The grand gate opens to reveal the majestic Pyramids, and Harrison's family waving happily!"),
+                DialogueLine("الراوي", "يدخل عمر وهاريسون إلى سرداب فرعوني مفقود تحت هضبة الأهرام. هنا يرقد تابوت غامض يحمل قناع توت عنخ آمون الذهبي الساحر!", "Entering a lost pharaonic crypt under Giza, they see a mysterious sarcophagus carrying Tutankhamun's Golden Mask!"),
+                DialogueLine("هاريسون", "يا إلهي! إنه بريق القناع الذهبي الشهير! لكن التابوت مقفل بقفل دوار ثلاثي الأبعاد لعنخ الرمزية!", "My God! It's the shine of the Golden Mask! But the sarcophagus is locked with a rotating 3D lock!"),
+                DialogueLine("عمر", "صحيح يا صديقي! دا قفل زاوية الدوران المقدس. لازم نضبط زاوية دوران المجسم على زاوية اللغز لفتح السرداب ويطلع لنا القناع الذهبي!", "Yes my friend! This is the sacred angle rotation lock. We need to rotate the 3D model to the secret target angle to pop the gold mask!")
+            )
+            5 -> listOf(
+                DialogueLine("الراوي", "يمر الصديقان بغرفة مخفية تسمى خزانة قارون الكبرى، وبها خرطوشة فرعونية عملاقة منقوش عليها رموز ملكية وأعداد غامضة...", "They pass through a hidden vault called Qarun's Treasury, holding a grand pharaonic cartouche carved with magic symbols and numbers..."),
+                DialogueLine("عمر", "شوف الخرطوشة دي يا هاريسون! دا لغز تتابع الأعداد من كتاب الحساب الفرعوني القديم. لو كملنا السلسلة الحسابية، الخزينة هتتفتح!", "See this Cartouche Harrison! This is a number sequence riddle from the ancient Egyptian math registry. If we complete it, the vault opens!"),
+                DialogueLine("هاريسون", "أنا جاهز يا عمر! أخبرني بتسلسل الأرقام وسأستخدم علم الجبر لحله والحصول على التميمة الملكية والخرطوشة!", "I'm ready Omar! Give me the sequence and I'll use algebraic equations to crack it and retrieve the Royal Cartouche!")
+            )
+            6 -> listOf(
+                DialogueLine("الراوي", "يصل عمر وهاريسون إلى مسلة فلكية قديمة ترتفع عالياً نحو السماء، وتصوب حزمتها الضوئية البراقة نحو النجوم الشامخة في الفلك...", "They reach an ancient astronomical obelisk rising high, focusing its light beams towards the majestic stars in the sky..."),
+                DialogueLine("عمر", "المسلة دي هي البوصلة الكونية للقدماء! وعشان نعدي للبوابة التالية، لازم نضبط الزوايا مع حركة النجوم وحزام أوريون الفلكي!", "This obelisk is the cosmic map of our ancestors! To pass through the next solar gate, we must align the obelisk elements with the stars!")
+            )
+            7 -> listOf(
+                DialogueLine("الراوي", "أخيراً، بقرب الأهرامات، تقع أعينهم على مخطوطة بردية ذهبية تسمى 'بردية الحكمة المفقودة' التي صانت تاريخ الفراعنة لآلاف السنين...", "Finally near the pyramids, they spot a golden scroll called 'The Lost Scroll of Wisdom' preserving pharaonic history..."),
+                DialogueLine("عمر", "دي آخر عقبة يا هاريسون وبنوصل لأهلك! لغز حارس المكتبة الفرعوني الأخير، وهو عبارة عن أسئلة ثقافية في تاريخ مصر الشامخ لفتح البوابة الأخيرة!", "This is the final hurdle Harrison! The library guardian's trivia quiz about Egypt's history to unlock the final gate!"),
+                DialogueLine("هاريسون", "رائع جداً! لقد قرأت عشرات الكتب عن مصر والملوك الفراعنة. أنا مستعد للاختبار لكي ألقى عائلتي الشوقة!", "Splendid! I read dozens of books about Egypt's pharaoh kings. I'm ready to pass this quiz and join my beloved family!")
+            )
+            8 -> listOf(
+                DialogueLine("الراوي", "وأخيراً! تنفتح البوابة الكبرى ويسقط النور الساطع ليكشف عن الأهرامات الثلاثة الشامخة وعائلة هاريسون وهي تلوح بسعادة وغبطة مفرطة!", "Finally! The grand gate opens to reveal the majestic Pyramids, and Harrison's family waving happily!"),
                 DialogueLine("هاريسون", "أبي! أمي! أنا هنا! شكراً لك يا رب! لقد نجحت بفضلك ومساعدة أخي عمر محيي الدين!", "Father! Mother! I am here! Thank God! I succeeded with help of my brother Omar Mohie El-Din!"),
                 DialogueLine("عمر", "الحمد لله على السلامة يا صاحبي! مصر بلدك التاني، وأي ضيف بييجي عندنا بنشيله في عيوننا وفي قلوبنا!", "Welcome back safely my friend! Egypt is your second home, we keep our guests in our eyes and hearts!"),
                 DialogueLine("هاريسون", "لن أنسى كرمك ومروءتك أبداً يا عمر. أنت البطل الحقيقي العظيم! وسأخبر العالم كله عن جمال مصر وطيبة أهلها!", "I will never forget your generosity Omar! You are the true hero! I will tell the whole world about Egypt's beauty and kindness!")
