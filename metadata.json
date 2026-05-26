@@ -1,0 +1,6 @@
+{
+  "name": "رحلة عمر وهاريسون",
+  "description": "لعبة مغامرات وألغاز تفاعلية ثلاثية الأبعاد تحكي قصة السائح هاريسون الذي يضيع في مصر ومساعدة المواطن البطل عمر محيي الدين له في رحلته للعودة إلى أهله عند الأهرامات.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
